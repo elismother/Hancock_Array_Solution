@@ -45,7 +45,7 @@ namespace Hancock_Array_Project
             bool CharExists(int integer)
             {
 
-                if (!(exists == Array.Exists(charArray, ch => ch == (char)integer)))
+                if (!(Array.Exists(charArray, ch => ch == (char)integer)))
                 {
                     return false;
                 }
