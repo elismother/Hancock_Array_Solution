@@ -42,6 +42,16 @@ namespace Hancock_Array_Project
 
             Console.WriteLine("Elapsed time: " + (stopwatch.Elapsed.ToString()));
 
+            //bool CharExists(int integer)
+            //{
+
+            //    if (!(Array.Exists(charArray, ch => ch == (char)integer)))
+            //    {
+            //        return false;
+            //    }
+            //    return true;
+            //}
+
             bool CharExists(int integer)
             {
                 char targetChar = (char)integer;
