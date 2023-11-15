@@ -44,12 +44,15 @@ namespace Hancock_Array_Project
 
             bool CharExists(int integer)
             {
-
-                if (!(Array.Exists(charArray, ch => ch == (char)integer)))
+                char targetChar = (char)integer;
+                foreach (char ch in charArray)
                 {
-                    return false;
+                    if (ch == targetChar)
+                    {
+                        return true;
+                    }
                 }
-                return true;
+                return false;
             }
         }
     }
